@@ -19,15 +19,15 @@
             &:hover{
                 background-color: #e2e2e2;
             }
+
             & td{
                 border: 2px solid #ccc;
 
                 &:first-child{
                     text-align: center;
-
                 }
                 &:last-child{
-                    text-align: center    ;
+                    text-align: center;
                 }
             }
         }
