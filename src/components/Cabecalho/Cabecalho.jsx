@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./Cabecalho.module.css";
+import Cabecalho from "./Cabecalho.scss";
 
 export default function Cabecalho() {
-
   
+    const rotaAtual = useLocation();
+
   return (
     <>
         <header className={styles.cabecalho}>
@@ -15,7 +17,7 @@ export default function Cabecalho() {
 
           <nav>
             <ul>
-              <li><Link to="/">HOME</Link></li>
+              <li><Link to="/" className={rotaAtual.pathname == "/" ? "active" : "" }>HOME</Link></li>
               <li><Link to="/produtos">PRODUTOS</Link> </li>
             </ul>
           </nav>
